@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:background="@color/dark_grey"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:orientation="horizontal">
+
+        <view
+            android:id="@+id/row_tab"
+            class="android.view.View"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/green"/>
+        <!--ellipsize属性将会截断过长的文本，并用省略号来填充行的结尾
+        maxLines将每个条目中的文本行数限定为1-->
+        <TextView
+            android:id="@+id/row_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="TextView"
+            android:textSize="18sp"
+            tools:text="Reminder Text"
+            android:gravity="center_vertical"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+
+
+    </LinearLayout>
+
+    <view
+        class="android.view.View"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#000"/>
+    <view
+        class="android.view.View"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#333"/>
+
+
+</LinearLayout>
